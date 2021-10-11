@@ -1,3 +1,5 @@
+package lab2;
+
 public class Table implements Element {
     private String title;
 
@@ -6,7 +8,7 @@ public class Table implements Element {
     }
 
     public void print() {
-        System.out.println(title);
+        System.out.println(this.title);
     }
 
 }

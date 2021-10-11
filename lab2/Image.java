@@ -1,3 +1,5 @@
+package lab2;
+
 public class Image implements Element {
     private String imageName;
 

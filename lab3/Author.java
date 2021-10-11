@@ -1,3 +1,5 @@
+package lab3;
+
 public class Author {
 
     private String name;
@@ -9,5 +11,4 @@ public class Author {
     public void print() {
         System.out.println("Author: " + name);
     }
-
 }

@@ -1,7 +1,10 @@
+package lab2;
+
 public class MyBook {
   public static void main(String[] args) {
     Book discoTitanic = new Book("Disco Titanic");
     Author rpGheo = new Author("Radu Pavel Gheo");
+    
     discoTitanic.addAuthor(rpGheo);
     String indexChapterOne = "Capitolul 1";
     Chapter chp1 = new Chapter(indexChapterOne);
