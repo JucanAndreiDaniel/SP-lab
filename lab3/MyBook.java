@@ -21,5 +21,8 @@ public class MyBook {
         cap1111.add(new Image("Image subchapter 1.1.1.1"));
 
         discoTitanic.print();
+        System.out.println("\n");
+        cap11.print();
+
     }
 }

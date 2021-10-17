@@ -1,6 +1,8 @@
 package lab3;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 
 public class Section implements Element {
     private String title;
@@ -11,8 +13,15 @@ public class Section implements Element {
         this.elements = new ArrayList<>();
     }
 
+    public Section(Section section) {
+        this.title = section.title;
+        this.elements = new ArrayList<>();
+        Collections.copy(this.elements, section.elements);
+    }
+
     @Override
-    public void add(Element element) throws Exception {
+    public void add(Element fakeElement) throws Exception {
+        Element element = Utils.checkAndReturnCopy(fakeElement);
         for (Element i : this.elements)
             if (i.find(element))
                 throw new Exception("Unsupported Operation");

@@ -6,6 +6,9 @@ public class Image implements Element {
     public Image(String imageName) {
         this.imageName = imageName;
     }
+    public Image(Image image) {
+        this.imageName = image.imageName;
+    }
 
     public void print() {
         System.out.println("Image name: " + imageName);

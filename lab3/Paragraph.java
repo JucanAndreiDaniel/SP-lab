@@ -7,6 +7,10 @@ public class Paragraph implements Element {
         this.paragraphName = paragraphName;
     }
 
+    public Paragraph(Paragraph paragraph) {
+        this.paragraphName = paragraph.paragraphName;
+    }
+
     public void print() {
         System.out.println("Paragraph name: " + paragraphName);
     }
